@@ -1,0 +1,18 @@
+require: rubocop-rails
+Metrics/LineLength:
+  Max: 120
+Rails:
+  Enabled: true
+Style/FormatStringToken:
+  Enabled: false
+Style/Documentation:
+  Exclude:
+    - app/**/*
+    - config/**/*
+    - db/**/*
+    - lib/**/*
+    - test/**/*
+Style/ClassAndModuleChildren:
+  Exclude:
+    - app/**/*
+    - test/*
