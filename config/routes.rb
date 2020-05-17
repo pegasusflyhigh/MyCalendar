@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   get 'login', to: redirect('/auth/google_oauth2')
   get 'logout', to: 'sessions#logout'
+
+  get 'calendars/index'
+  get 'calendars/:calendar_id/events', to: 'calendars#events', as: 'calendar_events'
 end
