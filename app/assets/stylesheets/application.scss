@@ -14,10 +14,70 @@
 @import "bootstrap";
 @import "font-awesome";
 
+.standard-bg-color{
+  background-color: #4D7BC4;
+}
+
+.image-size {
+  max-width: 30px;
+  margin-right: auto;
+}
+
+.nav-item .nav-link{
+    font-size: 1.00rem;
+    color: white;
+}
+
+.profile_picture {
+  border-radius: 50%;
+}
+
+.calendar-card {
+  min-height: 250px;
+  min-width: 323px;
+  margin-top: 55px;
+  margin-left: 50px;
+}
+
+.calendar-card .calendar-header{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: larger;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.event-card{
+  min-height: 250px;
+  width: 453px;
+  margin-top: 55px;
+  margin-left: 100px;
+  border-color: #ccddf7;
+}
+
+.event-card .card-header{
+    background-color: #ccddf7;
+    border-color: #ccddf7;
+  }
+
+.event-card .card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-location{
+  margin-top: auto;
+}
+
 .welcome-image{
   max-width: 100px;
 }
 
 .custom-btn{
   background-color: #4D7BC4;
+}
+.fa{
+  padding-right: 3px;
 }
