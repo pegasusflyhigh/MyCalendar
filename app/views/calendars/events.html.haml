@@ -1,0 +1,11 @@
+.text-center
+  %h4 #{@calendar['summary']}
+%br/
+%ul
+  = render partial: "/events", locals: { events: @events}
+  - if(@events.size == 0)
+    .align-self-center
+      .card
+        .card-body
+          .text-center
+            %h3 No events till now!

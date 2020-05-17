@@ -1,0 +1,24 @@
+.row
+  - events.each do |event, action|
+    .card.event-card
+      .card-header
+        = event['summary']
+      .card-body
+        -if format_event_date(event)[0]
+          Date : 
+          = format_event_date(event)[1]
+        -else
+          .span
+            From :
+            = format_event_date(event)[1] || ' - '
+          .span
+            To :
+            = format_event_date(event)[2] || ' - '
+        %hr
+          %p= event['description']
+        %hr
+        - if event['location'].present?
+          .event-location.fa.fa-map-marker
+            = event['location']
+      .card-footer.text-center
+        = link_to "Open in Google Calendar", event['html_link'], target: '_blank'

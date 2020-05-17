@@ -14,4 +14,5 @@ Rails.application.routes.draw do
 
   get 'calendars/index'
   get 'calendars/:calendar_id/events', to: 'calendars#events', as: 'calendar_events'
+  get 'users/:user_id/events', to: 'users#events', as: 'user_events'
 end

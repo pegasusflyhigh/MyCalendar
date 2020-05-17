@@ -17,4 +17,10 @@ class Event < ApplicationRecord
       event.save
     end
   end
+
+  def all_day_event?
+    return unless start_time.try(:[], 'date').present? && end_time.try(:[], 'date').present?
+
+    Date.parse(end_time.dig('date')) == Date.parse(start_time.dig('date')) + 1.day
+  end
 end

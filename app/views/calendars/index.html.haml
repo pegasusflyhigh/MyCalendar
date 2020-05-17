@@ -1,0 +1,10 @@
+.text-center
+  %h2 My Calendars
+%br/
+.row
+  - @calendars.each do |calendar|
+    .row.col.s6
+      %a{:href => "#{calendar_events_path(calendar.dig('id'))}"}
+        .card.calendar-card{:style => "background-color: #{calendar['bg_color']}; color: #{calendar['fg_color']}"}
+          .text-center.calendar-header
+            = calendar['summary']
