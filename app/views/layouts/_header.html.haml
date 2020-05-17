@@ -1,0 +1,10 @@
+%nav.navbar.navbar-expand-sm.navbar-dark.standard-bg-color
+  .container-fluid
+    %a.navbar-brand{:href=> calendars_index_path} MyCalendar
+    %img.image-size{:src => "/google_calendar.png"}
+    - if current_user
+      .nav-item
+        %a.nav-link{ :href => calendars_index_path } Calendars 
+      .nav-item
+        %a.nav-link{ :href => logout_path, method: :delete } Logout  
+      %img.profile_picture{:height => "40", :src => "#{current_user.image_url}"}
