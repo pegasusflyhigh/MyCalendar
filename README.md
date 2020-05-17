@@ -22,6 +22,7 @@ Track and access your Google Calendar events with this application.
   - Gives a *sync now* button to user for subsequent syncing of data
   - Subsequent syncing is implemented using a sidekiq worker
 * Uses Rspec for Testing
+* Uses rubocop for analysing and formatting code. Maintaining zero offences as of yet.
 
 ## Steps to run locally 
 
