@@ -1,0 +1,14 @@
+%div{:classname => "card-panel grey lighten-2"}
+  %div{:classname => "container"}
+    .text-center
+      %img.welcome-image{:src => "/Hi.png"}
+      %br
+      %br
+      %h2 Welcome! 
+      %p Track and access your Google Calendar events here!
+      - unless current_user
+        .btn.custom-btn
+          %a{:href => login_path} 
+            .text-white
+              Login using Google
+            
