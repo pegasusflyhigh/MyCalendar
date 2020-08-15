@@ -1,7 +1,7 @@
 # MyCalendar
 
-Track and access your Google Calendar events with this application.
-Deployed here : https://track-my-calendars.herokuapp.com/
+- Track and access your Google Calendar events with this application.
+- Deployed here : https://track-my-calendars.herokuapp.com/
 
 ## Features
 * On successful sign in through Google account, all his calendars and events are imported to the App.
